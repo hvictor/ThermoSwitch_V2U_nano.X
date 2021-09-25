@@ -22,8 +22,8 @@
 
 // BSP Types
 typedef enum {
-    TEMP1 = 0,
-    TEMP2 = 1
+    TEMP1 = 4,
+    TEMP2 = 5
 } BSP_TemperatureSensor;
 
 typedef enum {
@@ -86,6 +86,7 @@ BSP_RelayStatus bsp_relay_status();
 // LEDs and signaling
 void bsp_leds_initialize();
 void bsp_signal_led1(int num_blinks);
+void bsp_long_signal_led1(int num_blinks);
 void bsp_fix_led1();
 void bsp_unfix_led1();
 
